@@ -8,11 +8,11 @@ type Author {
   id: Int!
   firstName: String
   lastName: String
-  posts: [Post]
+  posts: [Post!]!
 }
 
 type Query {
-  author(id: Int!): Author
-  authors(first: Int!): [Author]
-  posts(): [Post]
+  author(id: Float!): Author
+  authors(first: Float!): [Author!]!
+  posts: [Post!]!
 }
